@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+        <h5>CALCULATOR</h5>
+        <input id="inp1" type="number" placeholder="input-1"/>
+        <input id="inp2" type="number" placeholder="input-2"/>
+       
+
+    </div>
+    <div>
+        <button id="add" onclick="add1()">ADD</button>
+        <button id="sub" onclick="sub1()">SUBTRACT</button>
+        <button id="mul" onclick="mul1()">MULTIPLY</button>
+        <button id="div" onclick="div1()">DIVIDE</button>
+    </div>
+    <div>
+        <input id="inp3" type="number" placeholder="TOTAL"/>
+    </div>
+    
+</body>
+</html>
+<script>
+    
+//    let add=document.getElementById("add")
+//     let sub=document.getElementById("sub")
+//     let mul=document.getElementById("mul")
+//     let div=docivument.getElementById("div")
+    let input1=document.getElementById("inp1")
+    let input2=document.getElementById("inp2")
+    let add1 = function(){
+        let valadd = Number(input1.value) + Number(input2.value)
+        document.getElementById("inp3").value=valadd
+    }
+    let sub1 = function(){
+        let valadd=input1.value - input2.value
+        document.getElementById("inp3").value=valadd
+    }
+    let mul1 = function(){
+        let valadd= input1.value * input2.value
+        document.getElementById("inp3").value=valadd
+    }
+    let div1 = function(){
+        let valadd= input1.value / input2.value
+        document.getElementById("inp3").value=valadd
+    }
+</script>
